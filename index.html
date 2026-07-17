@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Eziefula Samuel Chigozie</title>
+  <meta name="description" content="Personal academic portfolio of Eziefula Samuel Chigozie, Cybersecurity student at MIVA Open University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">&lt;ESC/&gt;</span>
+        <span class="brand-text">Eziefula S. Chigozie</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link is-active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">// COS 106 Lab Assessment — MIVA Open University</p>
+          <h1>Hello, welcome to my page.<br><span class="accent-text">This is my lab assessment.</span></h1>
+          <p class="hero-lede">
+            I am a 100-level Cybersecurity student at MIVA Open University, Abuja, Nigeria —
+            learning to think like a defender and, when I have to, like an attacker.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">View My Projects</a>
+            <a href="contact.html" class="btn btn-ghost">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-amber"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">student@miva:~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="type-line" id="typeLine"></p>
+            <p><span class="prompt">$</span> <span class="cursor-blink">&#9608;</span></p>
+          </div>
+          <div class="terminal-scan" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section profile-section">
+      <div class="profile-card">
+        <img
+          class="profile-photo"
+          src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Crect width='240' height='240' fill='%230A1E3F'/%3E%3Ccircle cx='120' cy='95' r='42' fill='%2317D7C4'/%3E%3Crect x='55' y='150' width='130' height='90' rx='45' fill='%2317D7C4'/%3E%3C/svg%3E"
+          alt="Profile placeholder photograph of Eziefula Samuel Chigozie">
+        <div class="profile-text">
+          <h2>Eziefula Samuel Chigozie</h2>
+          <p class="profile-role">Cybersecurity Undergraduate &middot; Web &amp; Graphics Designer</p>
+          <p>
+            I am a 100-level Cybersecurity student at MIVA Open University located at Abuja, Nigeria.
+            I am passionate about digital forensics, SOC analysis, and uncovering vulnerabilities to
+            build a more secure digital space. This website serves as my personal roadmap portfolio,
+            where I showcase my academic achievements, projects, and skills. I built this site using
+            HTML, CSS, and JavaScript as part of my COS 106 Lab Assessment project.
+          </p>
+          <p>
+            In the world today, technology has moved faster and increased in the max production of
+            machines and tools used in the world today, which needs more protection from attack and
+            building more security systems.
+          </p>
+          <p>
+            In respect with this, I am a computer instructor, I design websites with Figma (UI/UX),
+            and I am as well a graphic designer proficient in CorelDraw and Photoshop.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section media-section">
+      <h2 class="section-title">A Quick Introduction</h2>
+      <p class="section-subtitle">A short recorded walkthrough of who I am and what this portfolio covers.</p>
+      <div class="media-wrap">
+        <video controls poster="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='450'%3E%3Crect width='800' height='450' fill='%230A1E3F'/%3E%3Ctext x='400' y='230' fill='%2317D7C4' font-size='28' font-family='monospace' text-anchor='middle'%3EIntro Video Placeholder%3C/text%3E%3C/svg%3E">
+          <source src="assets/intro-placeholder.mp4" type="video/mp4">
+          Your browser does not support the video element. Here is a
+          <a href="assets/intro-placeholder.mp4">link to the video</a> instead.
+        </video>
+        <p class="media-caption">Note: replace <code>assets/intro-placeholder.mp4</code> with your own recorded clip before submission.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Eziefula Samuel Chigozie &middot; COS 106 Lab Assessment</p>
+      <p class="footer-copy">&copy; Copyright 2025 MIVA Open University All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
