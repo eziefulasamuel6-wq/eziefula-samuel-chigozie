@@ -1,20 +1,20 @@
 /* =========================================================
    COS 106 STUDENT PORTFOLIO — STYLES
-   Design tokens: Deep Navy / Slate / Light Gray / Cyan-Teal
+   Design tokens: White / Gold / Sky Blue
    ========================================================= */
 
 :root {
   /* --- Color tokens --- */
-  --color-navy:        #0A1E3F;
-  --color-navy-deep:   #071531;
-  --color-navy-mid:    #112A52;
-  --color-slate:       #3C4A5E;
-  --color-slate-light: #647089;
-  --color-fog:         #F4F6F8;
-  --color-white:       #FFFFFF;
-  --color-cyan:        #17D7C4;
-  --color-cyan-deep:   #0FB8A8;
-  --color-blue-accent: #00B4D8;
+  --color-navy:        #0284C7;  /* sky blue — header / hero / footer bg */
+  --color-navy-deep:   #075985;  /* deep sky blue — gradients, footer */
+  --color-navy-mid:    #0EA5E9;  /* mid sky blue — terminal panel bg */
+  --color-slate:       #1E293B;  /* dark neutral — body text (kept readable) */
+  --color-slate-light: #57708A;  /* muted blue-grey — secondary text */
+  --color-fog:         #F8FAFC;  /* near-white page background */
+  --color-white:       #FFFFFF;  /* white — cards, surfaces */
+  --color-cyan:        #F5B700;  /* gold — primary accent */
+  --color-cyan-deep:   #D69E00;  /* deep gold — hover states */
+  --color-blue-accent: #38BDF8;  /* sky blue — secondary accent/links */
   --color-success:     #2BB673;
   --color-error:       #E63946;
 
@@ -207,7 +207,7 @@ input, textarea { font-family: inherit; }
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0,0,0,0.35);
-  border: 1px solid rgba(23,215,196,0.25);
+  border: 1px solid rgba(245,183,0,0.25);
 }
 .terminal-bar {
   display: flex;
@@ -324,7 +324,7 @@ input, textarea { font-family: inherit; }
   margin-top: 0.6rem;
 }
 .media-caption code {
-  background: rgba(23,215,196,0.12);
+  background: rgba(245,183,0,0.12);
   padding: 0.1rem 0.4rem;
   border-radius: 4px;
   font-family: var(--font-mono);
@@ -354,7 +354,7 @@ input, textarea { font-family: inherit; }
   letter-spacing: 0.04em;
 }
 .edu-table tbody tr:last-child td { border-bottom: none; }
-.edu-table tbody tr:hover { background: rgba(23,215,196,0.06); }
+.edu-table tbody tr:hover { background: rgba(245,183,0,0.06); }
 
 /* =========================== CARD GRID (Aspirations / Projects) =========================== */
 .card-grid {
@@ -430,7 +430,7 @@ input, textarea { font-family: inherit; }
 .tag-list li {
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  background: rgba(23,215,196,0.12);
+  background: rgba(245,183,0,0.12);
   color: var(--color-cyan-deep);
   padding: 0.25rem 0.6rem;
   border-radius: 6px;
