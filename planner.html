@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Eziefula Samuel Chigozie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">&lt;ESC/&gt;</span>
+        <span class="brand-text">Eziefula S. Chigozie</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link is-active">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <div class="section">
+      <p class="eyebrow">Interactive Tool</p>
+      <h1 class="section-title">Academic Planner</h1>
+      <p class="section-subtitle">Add, complete, and remove tasks — everything here runs on vanilla JavaScript and updates instantly.</p>
+
+      <div class="planner-card">
+        <form id="taskForm" class="task-form">
+          <label for="taskInput" class="sr-only">New task</label>
+          <input type="text" id="taskInput" name="taskInput" placeholder="e.g. Read Chapter 3 — Network Security" autocomplete="off" required>
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+        <div class="planner-meta">
+          <span id="taskCountLabel">0 tasks</span>
+          <span id="taskDoneLabel">0 completed</span>
+        </div>
+
+        <ul id="taskList" class="task-list" aria-live="polite">
+          <!-- Tasks injected here by script.js -->
+        </ul>
+
+        <p id="taskEmptyState" class="empty-state">No tasks yet — add your first study task above.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Eziefula Samuel Chigozie &middot; COS 106 Lab Assessment</p>
+      <p class="footer-copy">&copy; Copyright 2025 MIVA Open University All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
