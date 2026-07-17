@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Eziefula Samuel Chigozie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">&lt;ESC/&gt;</span>
+        <span class="brand-text">Eziefula S. Chigozie</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link is-active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <div class="section">
+      <p class="eyebrow">Let's Connect</p>
+      <h1 class="section-title">Contact Me</h1>
+      <p class="section-subtitle">Have a question about my work, or want to collaborate? Send a message below.</p>
+
+      <div class="contact-wrap">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="nameField">Full Name</label>
+            <input type="text" id="nameField" name="name" placeholder="Eziefula Samuel Chigozie" required>
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="emailField">Email Address</label>
+            <input type="email" id="emailField" name="email" placeholder="c.eziefula7746@miva.edu.ng" required>
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="phoneField">Phone Number</label>
+            <input type="tel" id="phoneField" name="phone" placeholder="08020970675" required>
+            <span class="field-error" id="phoneError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="messageField">Message</label>
+            <textarea id="messageField" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+
+        <aside class="contact-info">
+          <h2>Direct Details</h2>
+          <ul>
+            <li><span class="info-label">Email</span><span>c.eziefula7746@miva.edu.ng</span></li>
+            <li><span class="info-label">Phone</span><span>0802 097 0675</span></li>
+            <li><span class="info-label">Location</span><span>Abuja, Nigeria</span></li>
+            <li><span class="info-label">University</span><span>MIVA Open University</span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Eziefula Samuel Chigozie &middot; COS 106 Lab Assessment</p>
+      <p class="footer-copy">&copy; Copyright 2025 MIVA Open University All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
