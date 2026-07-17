@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Eziefula Samuel Chigozie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">&lt;ESC/&gt;</span>
+        <span class="brand-text">Eziefula S. Chigozie</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link is-active">About Me</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="planner.html" class="nav-link">Academic Planner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <div class="section">
+      <p class="eyebrow">About Me</p>
+      <h1 class="section-title">Background, Goals &amp; Skills</h1>
+
+      <h2 class="subsection-title">Educational Background</h2>
+      <div class="table-wrap">
+        <table class="edu-table">
+          <thead>
+            <tr>
+              <th>Institution</th>
+              <th>Qualification</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>St. Anthony Comprehensive Secondary School</td>
+              <td>WAEC (Senior Secondary Certificate)</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>MIVA Open University</td>
+              <td>BSc. in Cybersecurity (In View)</td>
+              <td>100 Level</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="subsection-title">Career Aspirations</h2>
+      <ul class="card-grid aspirations-grid">
+        <li class="info-card">
+          <span class="info-card-icon" aria-hidden="true">&#128269;</span>
+          <h3>Digital Forensics</h3>
+          <p>Investigating digital evidence to uncover how systems were breached and how to prevent it happening again.</p>
+        </li>
+        <li class="info-card">
+          <span class="info-card-icon" aria-hidden="true">&#128737;</span>
+          <h3>SOC Analyst</h3>
+          <p>Monitoring, detecting, and responding to security incidents from within a Security Operations Center.</p>
+        </li>
+        <li class="info-card">
+          <span class="info-card-icon" aria-hidden="true">&#128272;</span>
+          <h3>Penetration Testing</h3>
+          <p>Thinking like an attacker to responsibly find and report vulnerabilities before they can be exploited.</p>
+        </li>
+      </ul>
+
+      <h2 class="subsection-title">Technical Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <div class="skill-item-head"><span>Graphics Design</span><span>88%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--fill:88%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-head"><span>Web Development (HTML/CSS/JS)</span><span>80%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--fill:80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-head"><span>Figma (UI/UX Design)</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--fill:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-head"><span>CorelDraw</span><span>82%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--fill:82%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-head"><span>Photoshop</span><span>78%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="--fill:78%"></div></div>
+        </div>
+      </div>
+
+      <h2 class="subsection-title">Hobbies &amp; Interests</h2>
+      <div class="badge-row">
+        <span class="badge">Reading</span>
+        <span class="badge">Research</span>
+        <span class="badge">Problem Solving</span>
+        <span class="badge">Teaching</span>
+        <span class="badge">Video Games</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">Eziefula Samuel Chigozie &middot; COS 106 Lab Assessment</p>
+      <p class="footer-copy">&copy; Copyright 2025 MIVA Open University All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
